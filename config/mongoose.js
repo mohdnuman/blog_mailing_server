@@ -1,7 +1,7 @@
 const mongoose=require('mongoose');
 const env=require('../config/environment'); 
 
-mongoose.connect(`mongodb://localhost/blog_db`);
+mongoose.connect(`mongodb://localhost/${env.db}`);
 
 const db=mongoose.connection;
 
