@@ -31,7 +31,7 @@ const production = {
   smtp: {
     host: "smtpout.secureserver.net",
     port: 465,
-    secure: false,
+    secure: true,
     auth: {
       user: process.env.CODEIAL_SMTP_USER,
       pass: process.env.CODEIAL_SMTP_PASS,
